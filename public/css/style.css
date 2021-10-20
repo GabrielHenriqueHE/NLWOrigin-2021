@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+@media (min-width: 360px) and (max-width: 640px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        color: rgba(255, 255, 255, 0.80);
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    ul, ol, li {
+        list-style-type: none;
+    }
+    
+    main {
+        background: url(../images/Background.png);
+        min-height: 640px;
+        max-width: 100%;
+        min-width: 360px;
+    }
+    
+    .container {
+        padding: 1rem;
+        max-width: 250px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .avatar {
+        position: relative;
+        margin: 11rem auto 0;
+        width: 10rem;
+    }
+    
+    .avatar > img {
+        width: 10rem;
+        height: auto;
+        object-fit: cover;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    }
+    
+    .avatar span {
+        position: absolute;
+        top: -1rem;
+        z-index: 1;
+    }
+    
+    .container h1 {
+        color: #eee;
+        margin: 1rem auto;
+        font-size: 1.8rem;
+    }
+    
+    .container > a{
+        margin: 0.5rem auto;
+    }
+    
+    .container p {
+        margin: 1rem auto 0;
+    }
+    
+    .container ul {
+        margin: 1.78rem auto;
+    }
+    
+    .container ul {
+        display: flex;
+        justify-content: center;
+        gap: 0.3rem;
+    }
+}
+
