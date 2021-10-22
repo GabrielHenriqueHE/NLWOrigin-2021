@@ -16,7 +16,7 @@
                 </span>
                 <img src="https://scontent.fguj3-1.fna.fbcdn.net/v/t1.6435-9/110163353_2882021901921287_4544167717393722000_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=Nn5yAlFOlxQAX9uCUou&_nc_ht=scontent.fguj3-1.fna&oh=b6bb1e9b7cee77cffe4cd44be85f5693&oe=6194CBF7" alt="Foto do usuário">
             </div>
-            <h1>Gabriel Henrique</h1>
+            <h1 id="userName">Mayk Brito</h1>
             <a id="github" href="https://github.com/gabrielhenriquehe">
                 <img src="public/images/Github.svg" alt="Logo Github">
                 GabrielHenriqueHE
@@ -36,22 +36,6 @@
             </ul>
         </div>
     </main>
-    <script>
-        const socialMediaLinks = {
-            github: "gabrielhenriquehe",
-            instagram: "_gabriel_h_e",
-            facebook: "gabrielhenrique.evaristo"
-        }
-
-        function changeSocialMediaLinks() {
-            for (let li of socialLinks.children) {
-                const socialMedia = li.getAttribute('id')
-                li.children[0].href = `https://${socialMedia}.com/${socialMediaLinks[socialMedia]}`
-            }
-        }
-
-        changeSocialMediaLinks()
-
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
